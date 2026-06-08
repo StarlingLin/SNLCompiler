@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "编译器调试",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/snlc.exe",
+            "args": ["test.snl", "-NO_LL1"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "preLaunchTask": "Build SNLCompiler"
+        }
+
+    ]
+}

@@ -1,0 +1,28 @@
+program semerr
+
+type
+    IntArray = array [1..10] of integer;
+
+var
+    integer x, y;
+    char c;
+    IntArray a;
+
+procedure p(integer k; var integer z);
+begin
+    z := k
+end
+
+begin
+    x := c;
+    y := notDeclared;
+    a[c] := x;
+    x[1] := y;
+    p(c, x);
+    p(x, x + 1);
+    if x = c then
+        x := x + 1
+    else
+        y := y + 1
+    fi
+end.

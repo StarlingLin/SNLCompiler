@@ -1,0 +1,15 @@
+{
+    "tasks": [
+        {
+            "label": "Build SNLCompiler",
+            "type": "shell",
+            "command": "g++ -std=c++11 -o build/snlc.exe SNLCompiler/*.cpp",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ],
+    "version": "2.0.0"
+}

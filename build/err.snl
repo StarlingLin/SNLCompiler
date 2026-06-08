@@ -1,0 +1,14 @@
+program SyntaxError
+
+var
+    integer x;
+
+begin
+    read(x);
+    { 这边if后面没加then }
+    if x < 10
+        write(x)
+    else
+        x := x + 1
+    fi
+end.
